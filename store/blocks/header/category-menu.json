@@ -1,0 +1,350 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#relojes",
+      "menu-item#joyeria",
+      "menu-item#marcas"
+    ]
+  },
+  "menu-item#relojes": {
+    "props": {
+      "id": "menu-item-relojes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/",
+        "noFollow": false,
+        "tagTitle": "Relojes",
+        "text": "Relojes"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#relojes"
+    ]
+  },
+  "vtex.menu@2.x:submenu#relojes": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#relojes"
+    ]
+  },
+  "vtex.menu@2.x:menu#relojes": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#relojes-buceo",
+      "menu-item#carreras",
+      "menu-item#clasicos",
+      "menu-item#cronografos",
+      "menu-item#militar",
+      "menu-item#navegacion",
+      "menu-item#piloto",
+      "menu-item#suizo"
+    ]
+  },
+  "menu-item#relojes-buceo": {
+    "props": {
+      "id": "menu-item-relojes-buceo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/buceo",
+        "noFollow": false,
+        "tagTitle": "Buceo",
+        "text": "Buceo"
+      }
+    }
+  },
+  "menu-item#carreras": {
+    "props": {
+      "id": "menu-item-carreras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/carreras",
+        "noFollow": false,
+        "tagTitle": "Carreras",
+        "text": "Carreras"
+      }
+    }
+  },
+  "menu-item#clasicos": {
+    "props": {
+      "id": "menu-item-clasicos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/clasicos",
+        "noFollow": false,
+        "tagTitle": "Clásicos",
+        "text": "Clásicos"
+      }
+    }
+  },
+  "menu-item#cronografos": {
+    "props": {
+      "id": "menu-item-cronografos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/cronografos",
+        "noFollow": false,
+        "tagTitle": "Cronógrafos",
+        "text": "Cronógrafos"
+      }
+    }
+  },
+  "menu-item#militar": {
+    "props": {
+      "id": "menu-item-militar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/militar",
+        "noFollow": false,
+        "tagTitle": "Militar",
+        "text": "Militar"
+      }
+    }
+  },
+  "menu-item#navegacion": {
+    "props": {
+      "id": "menu-item-navegacion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/navegacion",
+        "noFollow": false,
+        "tagTitle": "Navegación",
+        "text": "Navegación"
+      }
+    }
+  },
+  "menu-item#piloto": {
+    "props": {
+      "id": "menu-item-piloto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/piloto",
+        "noFollow": false,
+        "tagTitle": "Piloto",
+        "text": "Piloto"
+      }
+    }
+  },
+  "menu-item#suizo": {
+    "props": {
+      "id": "menu-item-suizo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/relojes/suizo",
+        "noFollow": false,
+        "tagTitle": "Suizo",
+        "text": "Suizo"
+      }
+    }
+  },
+  "menu-item#joyeria": {
+    "props": {
+      "id": "menu-item-joyeria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria/",
+        "noFollow": false,
+        "tagTitle": "Joyería",
+        "text": "Joyería"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#relojes"
+    ]
+  },
+  "vtex.menu@2.x:submenu#joyeria": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#joyeria"
+    ]
+  },
+  "vtex.menu@2.x:menu#joyeria": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#anillos",
+      "menu-item#carreras",
+      "menu-item#clasicos",
+      "menu-item#cronografos",
+      "menu-item#militar",
+      "menu-item#navegacion",
+      "menu-item#piloto",
+      "menu-item#suizo"
+    ]
+  },
+
+  "menu-item#anillos": {
+    "props": {
+      "id": "menu-item-anillos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria/anillos",
+        "noFollow": false,
+        "tagTitle": "Anillos",
+        "text": "Anillos"
+      }
+    }
+  },
+  "menu-item#brazeletes": {
+    "props": {
+      "id": "menu-item-brazeletes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria/brazeletes",
+        "noFollow": false,
+        "tagTitle": "Brazeletes",
+        "text": "Brazeletes"
+      }
+    }
+  },
+  "menu-item#collares": {
+    "props": {
+      "id": "menu-item-collares",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria/collares",
+        "noFollow": false,
+        "tagTitle": "Collares",
+        "text": "Collares"
+      }
+    }
+  }, 
+  "menu-item#pendientes": {
+    "props": {
+      "id": "menu-item-pendientes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria/pendientes",
+        "noFollow": false,
+        "tagTitle": "Pendientes",
+        "text": "Pendientes"
+      }
+    }
+  }, 
+  "menu-item#pulseras": {
+    "props": {
+      "id": "menu-item-pulseras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria/pulseras",
+        "noFollow": false,
+        "tagTitle": "Pulseras",
+        "text": "Pulseras"
+      }
+    }
+  },
+
+  "menu-item#marcas": {
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/marcas/",
+        "noFollow": true,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#marcas"
+    ]
+  },
+  "vtex.menu@2.x:submenu#marcas": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-marcas"
+    ]
+  },
+  "flex-layout.row#menu-marcas": {
+    "children": [
+      "flex-layout.col#menu-marcas-1"
+    ]
+  },
+  "flex-layout.col#menu-marcas-1": {
+    "children": [
+      "vtex.menu@2.x:menu#marcas"
+    ]
+  },
+  "vtex.menu@2.x:menu#marcas": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#calvin-klein"
+    ]
+  },
+  "menu-item#calvin-klein": {
+    "props": {
+      "id": "menu-item-calvin-klein",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/calvin-klein",
+        "noFollow": true,
+        "tagTitle": "Calvin Klein",
+        "text": "Calvin Klein"
+      }
+    }
+  }
+}

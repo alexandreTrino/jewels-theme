@@ -1,0 +1,124 @@
+.menuItem{
+    position: relative;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--category-menu) .menuItem--first::after{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 42%;
+    content:"";
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+}
+
+.menuItem .styledLinkContainer{
+    margin: 0 1rem;
+}
+
+.menuItem .styledLinkContent{
+    position: relative;
+    display: flex;
+    padding-bottom:3px;
+    color:#000;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .menuItem .styledLinkContent{
+    color:#ffffff;
+    transition:all .12s linear;
+    font-weight: normal;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--category-menu) .menuItem .styledLinkContent{
+    text-transform: uppercase;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--category-menu) .menuItem .styledLinkContent::after{
+    display: block;
+    position: absolute;
+    bottom:-2px;
+    height: 1px;
+    width: 100%;
+    content: '';
+    background: #000000;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    transition: all .12s linear;
+}
+
+.menuItem .styledLinkContent:hover{
+    color:#000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--category-menu) .menuItem .styledLinkContent:hover::after{
+    opacity: 1;
+    filter:alpha(opacity=100)
+}
+
+:global(.vtex-rich-text-0-x-paragraph--title-social-footer),
+:global(.vtex-menu-2-x-menuContainerNav--menu-footer) 
+    :global(.vtex-menu-2-x-styledLinkContent--footer-title-menu){
+        font-weight: 700;
+        color:white;
+        display: block;
+        position: relative;
+        text-align: left;
+        padding-bottom: 10px;
+        padding-top: 0!important;
+        margin-bottom: 10px;
+        font-size:18px;
+        line-height: initial;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--footer-title-menu){
+    color:#b4975c!important ;
+}
+    
+
+.menuItem--subitem :global(.vtex-menu-2-x-styledLinkContent){
+    font-weight: normal;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--title-social-footer){
+    margin-top:0;
+    padding-top:16px;
+    margin-bottom: 25px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph--title-social-footer)::after,
+:global(.vtex-menu-2-x-menuContainerNav--menu-footer) 
+    :global(.vtex-menu-2-x-styledLinkContent--footer-title-menu)::after{
+        position: absolute;
+        bottom:0;
+        left:0;
+        content:"";
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color: #b4975c;
+}
+
+.menuContainer--menu-footer .menuItem{
+    opacity: .6;
+    transition: all .12s linear;
+}
+
+.menuContainer--menu-footer .styledLinkContent{
+    color: #ffffff;
+}
+
+.menuContainer--menu-footer .styledLinkContent--footer-title-menu{
+    color:#b4975c
+}
+
+.menuContainer--menu-footer .menuItem:hover{
+    opacity: 1;
+}
+
+.menuContainer--menu-footer .menuItem--footer-title-menu{
+    opacity: 1;
+}
+
+.menuContainer--menu-footer .styledLinkContent:hover{
+    color:#ffffff
+}

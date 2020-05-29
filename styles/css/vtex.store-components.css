@@ -1,0 +1,209 @@
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  max-width: 100%;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  margin: 0 auto;
+}
+
+.newsletter .container--news-footer {
+  clear:both;
+  padding: 0;
+}
+
+.label--news-footer {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.inputGroup--news-footer{
+  position: relative;
+}
+
+.inputGroup--news-footer :global(.vtex-styleguide-9-x-input){
+  background-color:#ffffff!important;
+  border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #808080!important;
+}
+
+::-ms-input-placeholder {
+  color: #808080!important;
+}
+
+::placeholder {
+  color: #808080!important;
+}
+
+.inputGroup {
+  margin-bottom: 4px;
+  display: flex;
+  color: #fff;
+  padding-top: 0;
+  margin-top: 10px;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group){
+  border: 0;
+}
+
+.searchBarInnerContainer :global(.vtex-styleguide-9-x-input),
+.searchBarInnerContainer  :global(.vtex-input__suffix){
+  background: #f5f5f5;
+}
+
+.searchBarInnerContainer  :global(.vtex-input__suffix){
+  transition: all .12s linear;
+}
+
+.searchBarInnerContainer  :global(.vtex-input__suffix):hover{
+  background: #eee;
+}
+
+.imageElement{
+  border-radius: 5px;
+}
+
+.buttonContainer--news-footer{
+  position: absolute;
+  right: 0;
+  top: 0
+}
+
+.inputGroup--news-footer :global(.vtex-button__label){
+  font-size: 0;
+  background: url("https://sierracintas.vteximg.com.br/arquivos/icon-subscribe.png") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.searchIcon {
+  margin-left: -13px;
+  width: auto;
+  height: 6px;
+  overflow: visible!important;
+  margin-top: -19px;
+}
+
+.specificationsTableContainer{
+  margin-top:2rem;
+  margin-left: 2.5rem;
+}
+
+.specificationsTableContainer{
+  margin-top:2rem;
+  margin-left: 2.5rem;
+  padding-left: 0;
+}
+.productImagesGallerySlide{
+  border-radius: 5px;
+  border:1px solid #ddd;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--details-product) :global(.vtex-button){
+  background-color: #000000;
+  border-color: #000000;
+  transition: all .12s linear;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--details-product) :global(.vtex-button):hover{
+  background-color: #4b392e;
+  border-color: #4b392e;
+}
+
+:global(.vtex-button){
+  outline: none!important;
+}
+
+.productImagesGallerySwiperContainer--quickview{
+  margin-top: 12px;
+}

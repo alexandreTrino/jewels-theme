@@ -1,0 +1,23 @@
+{
+    "store.custom#location-page":{
+        "blocks":[
+            "flex-layout.row#iframe-page",
+            "iframe#iframe-page"
+        ]
+    },
+    "flex-layout.row#iframe-page":{
+        "children":[
+            "iframe#iframe-page"
+        ],
+        "props":{
+            "blockClass": "iframe-page"
+        }
+    },
+    "iframe#iframe-page": {
+        "props": {
+            "src": "https://www.rolex.com/corners/es/official-rolex-retailer/afbf267460ea4fb2f436c046964f49a9.html",
+            "height": 4723
+        }
+    }
+
+}

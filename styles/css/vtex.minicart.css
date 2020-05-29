@@ -1,0 +1,20 @@
+.cartIcon {
+    width: 30px;
+    height: 22px;
+    overflow: visible!important;
+    position: relative;
+    top: -4px;
+}
+
+.minicartCheckoutButton :global(.vtex-button){
+    background: #000000;
+    border:none
+}
+
+.minicartQuantityBadge{
+    background: #000000;
+}
+
+.closeIconButton{
+    outline: none;
+}

@@ -1,0 +1,89 @@
+{ 
+ "flex-layout.row#brands":{
+    "children":["slider-layout#brands"],
+    "props":{
+      "blockClass":"row-brands"
+    }
+  },
+
+  "slider-layout#brands": {
+    "children": [
+      "image#brand1",
+      "image#brand2",
+      "image#brand3",
+      "image#brand4",
+      "image#brand5",
+      "image#brand6",
+      "image#brand7"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 4,
+        "phone": 2
+      },
+      "navigationStep": 1,
+      "showPaginationDots": "never",
+      "infinite": false,
+      "blockClass": "brands"
+    }
+  },
+
+  
+  "image#brand1": {
+    "props": {
+      "src": "assets/b-rolex.png",
+      "link":"/",
+      "blockClass": "brands"
+    }
+  },
+  
+  "image#brand2": {
+    "props": {
+      "src": "assets/b-patekphilippe.png",
+      "link":"/",
+      "blockClass": "brands"
+    }
+  },
+  
+  "image#brand3": {
+    "props": {
+      "src": "assets/b-baumermercier.jpg",
+      "link":"/",
+      "blockClass": "brands"
+    }
+  },
+  
+  "image#brand4": {
+    "props": {
+      "src": "assets/b-bellandross.png",
+      "link":"/",
+      "blockClass": "brands"
+    }
+  },
+  
+  "image#brand5": {
+    "props": {
+      "src": "assets/b-blancpain.png",
+      "link":"/",
+      "blockClass": "brands"
+    }
+  },
+  
+  "image#brand6": {
+    "props": {
+      "src": "assets/b-bomberg.png",
+      "link":"/",
+      "blockClass": "brands"
+    }
+  },
+  
+  "image#brand7": {
+    "props": {
+      "src": "assets/b-breguet.png",
+      "link":"/",
+      "blockClass": "brands"
+    }
+  }
+
+}

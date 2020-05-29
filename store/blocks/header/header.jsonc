@@ -1,0 +1,175 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#telemarketing-desktop",
+      "flex-layout.row#topbar-desktop",
+      "sticky-layout#4-desktop"
+    ]
+  },
+  "flex-layout.col#login":{
+    "children":[
+      "login"
+    ],
+    "props":{
+      "blockClass":"col-login"
+    }
+  },
+  "flex-layout.col#minicart":{
+    "children":[
+      "minicart.v2"
+    ],
+    "props":{
+      "blockClass":"col-minicart"
+    }
+  },
+  "login":{
+    "props": {
+        "showIconProfile": true,
+        "iconLabel": "Login"
+    }
+},
+  "flex-layout.row#telemarketing-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
+  "flex-layout.row#topbar-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#category-menu",
+      "flex-layout.col#search",
+      "flex-layout.col#login",
+      "flex-layout.col#minicart"
+    ]
+  },
+  "flex-layout.col#search": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"col-search",
+      "width": "grow"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"category-menu"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://ultrajewels.com/wp-content/uploads/2017/08/Ultrajewels-alta-relojeria-en-playa-del-carmen-y-cancun.jpg",
+      "width": "180"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "flex-layout.col#login",
+      "flex-layout.col#minicart"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#relojes",
+      "menu-item#joyeria",
+      "menu-item#marcas"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://ultrajewels.com/wp-content/uploads/2017/08/Ultrajewels-alta-relojeria-en-playa-del-carmen-y-cancun.jpg"
+    }
+  },
+
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"],
+    "props":{
+      "_unstableProductOriginVtex": true
+    }
+  }
+
+}

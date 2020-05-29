@@ -1,0 +1,254 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#main-banner",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "flex-layout.row#mini-banners",
+      "flex-layout.row#brands",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#line-banners",
+      "flex-layout.row#shelf-title-2",
+      "flex-layout.row#shelf-2"
+    ]
+  },
+
+  "flex-layout.row#main-banner":{
+    "children":["list-context.image-list#demo"],
+    "props":{
+      "blockClass":"main-banner-row"
+    }
+  },
+
+  "flex-layout.row#mini-banners":{
+    "children":[
+      "flex-layout.col#mini-banner-1",
+      "flex-layout.col#mini-banner-2"
+    ],
+    "props":{
+      "blockClass":"main-banner-row",
+      "colGap":5
+    }
+  },
+
+  "flex-layout.col#mini-banner-1":{
+    "children":[
+      "list-context.image-list#mini-banner-1"
+    ],
+    "props":{
+      "width":"53%"
+    }
+  },
+
+  "list-context.image-list#mini-banner-1": {
+    "children": ["slider-layout#mini-banner-1"],
+    "props": {
+      "height": 368,
+      "images": [
+        {
+          "image": "https://www.lunns.com/download/images/cartier_brandpage_top_banner.jpg",
+          "mobileImage": "https://www.lunns.com/download/images/cartier_brandpage_top_banner.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#mini-banner-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.col#mini-banner-2":{
+    "children":[
+      "list-context.image-list#mini-banner-2"
+    ]
+  },
+
+  "list-context.image-list#mini-banner-2": {
+    "children": ["slider-layout#mini-banner-2"],
+    "props": {
+      "height": 368,
+      "images": [
+        {
+          "image": "https://ultrajewels.com/wp-content/uploads/2020/05/Cover-Web-Banner-1.jpg",
+          "mobileImage": "https://ultrajewels.com/wp-content/uploads/2020/05/Cover-Web-Banner-1.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#mini-banner-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    }
+  },
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://ultrajewels.com/wp-content/uploads/2020/01/62017681_JLC_LATAM_POLARIS_ULTRA-JEWELS_2000x920-V2.jpg",
+          "mobileImage": "assets/banner-principal-mobile.png"
+        },
+        {
+          "image": "https://ultrajewels.com/wp-content/uploads/2020/01/banner-espan%C3%9Eol.png",
+          "mobileImage": "assets/banner-principal-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.row#shelf-title":{
+    "children":["rich-text#shelf-title"],
+    "props":{
+      "blockClass":"shelf-title-row"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Alta Relojería",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots":"mobileOnly",
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#shelf-title-2":{
+    "children":["rich-text#shelf-title-2"],
+    "props":{
+      "blockClass":"shelf-title-row"
+    }
+  },
+
+  "rich-text#shelf-title-2": {
+    "props": {
+      "text": "## Joyerías",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf-2": {
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products-2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots":"mobileOnly",
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#line-banners":{
+    "children":[
+      "flex-layout.col#mini-banner-3",
+      "flex-layout.col#mini-banner-4"
+    ],
+    "props":{
+      "blockClass":"line-banners-row",
+      "colGap":3
+    }
+  },
+
+  "flex-layout.col#mini-banner-3":{
+    "children":[
+      "image#mini-banner-3"
+    ],
+    "props":{
+      "width":"41%"
+    }
+  },
+
+  "image#mini-banner-3":{
+    "props":{
+      "src":"https://www.morgansjewelerspv.com/wp-content/uploads/2015/11/042516_PA_BANNER_JA_ROBERTO_COIN_BRAND.jpg",
+      "srcset":"https://www.morgansjewelerspv.com/wp-content/uploads/2015/11/042516_PA_BANNER_JA_ROBERTO_COIN_BRAND.jpg"
+    }
+  },
+
+  "flex-layout.col#mini-banner-4":{
+    "children":[
+      "image#mini-banner-4"
+    ],
+    "props":{
+      "width":"59%"
+    }
+  },
+  
+  "image#mini-banner-4":{
+    "props":{
+      "src":"https://www.sandrascloset.com/wp-content/uploads/2015/05/header.jpg",
+      "srcset":"https://www.sandrascloset.com/wp-content/uploads/2015/05/header.jpg"
+    }
+  }
+
+} 

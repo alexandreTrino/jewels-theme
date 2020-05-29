@@ -1,0 +1,39 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#orders",
+      "menu-item#contacto"
+    ]
+  },
+  "menu-item#orders": {
+    "props": {
+      "blockClass":"first",
+      "id": "menu-item-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/account",
+        "noFollow": false,
+        "tagTitle": "Sigue tu orden",
+        "text": "Sigue tu orden"
+      }
+    }
+  },
+  "menu-item#contacto": {
+    "props": {
+      "id": "menu-item-contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contacto",
+        "noFollow": false,
+        "tagTitle": "Contáctanos",
+        "text": "Contáctanos"
+      }
+    }
+  }
+}

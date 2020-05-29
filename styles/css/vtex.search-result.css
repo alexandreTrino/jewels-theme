@@ -1,0 +1,11 @@
+.filterTitle{
+    outline: none;
+}
+
+.buttonShowMore--layout{
+    margin: 20px 0;
+}
+
+.galleryTitle--layout{
+    text-transform: capitalize;
+}

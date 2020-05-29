@@ -1,0 +1,139 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"],
+    "props":{
+      "blockClass":"footer-site"
+    }
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#institucional",
+      "vtex.menu@2.x:menu#footer-atencion",
+      "vtex.menu@2.x:menu#footer-soporte",
+      "flex-layout.row#social-line-row"
+    ],
+    "props": {
+      "blockClass": ["menu-row","footer-site"],
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.row#social-line-row":{
+    "children":[
+      "flex-layout.col#social-line-col"
+    ]
+  },
+  "flex-layout.col#social-line-col":{
+    "children":[
+      "rich-text#title-social-footer",
+      "newsletter#news-footer",
+      "social-networks"
+    ],
+    "props":{
+      "blockClass":"footer-last-col",
+      "horizontalAlign":"right"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" },
+        { "url": "https://instagram.com/foo", "name": "Instagram" }
+      ],
+      "blockClass":"social-footer"
+    }
+  },
+  "rich-text#title-social-footer":{
+    "props": {
+      "textAlignment": "LEFT",
+      "text": "Suscríbete",
+      "textColor": "muted-1",
+      "font": "t-heading-5",
+      "blockClass": "title-social-footer"
+    }
+  },
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["rich-text#footer","flex-layout.col#col-pagos-img"],
+    "props": {
+      "blockClass": ["general-infos","menu-row"]
+    }
+  },
+  "flex-layout.col#col-pagos-img":{
+    "children":["image#pagos"],
+    "props":{
+      "horizontalAlign":"right"
+    }
+  },
+  "image#pagos": {
+    "props": {
+      "src": "/arquivos/pagos.png",
+      "srcset": "/arquivos/pagos.png",
+      "blockClass":"img-pagos",
+      "maxHeight":"30px"
+    }
+  },
+
+  "newsletter#news-footer":{
+    "props":{
+      "label":"Obtén 10% de descuento en tu primer compra",
+      "blockClass":"news-footer"
+    }
+  },
+
+  "rich-text#footer": {
+    "props": {
+      "text": "© Ultrajewels 2020  |  All Right Reserved",
+      "blockClass": "footer-copyright"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ],
+    "props":{
+      "blockClass":"credits"
+    }
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "image#pagos",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "© Ultrajewels - 2020  |  All Right Reserved",
+      "blockClass": "footer"
+    }
+  }
+}

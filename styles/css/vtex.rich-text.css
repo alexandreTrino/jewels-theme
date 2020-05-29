@@ -1,0 +1,118 @@
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #000000;
+  justify-content: flex-start;
+  text-align: left;
+  padding-bottom: 0.3rem;
+  border-bottom:1px solid #ddd;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.container--shelfTitle::before{
+  content:"";
+  display: block;
+  position: absolute;
+  left:0;
+  bottom:0;
+  height: 2px;
+  width: 7%;
+  background-color: #000;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+}
+
+.paragraph--footer-copyright{
+  color: #b4975c;
+  font-size: 14px;
+}
+
+.paragraph--empty-cart-text {
+  display: block;
+  background: #ffff8c;
+  padding: 1rem 1rem 1rem 2rem;
+  color: black;
+}
