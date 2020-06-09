@@ -1,7 +1,7 @@
 {
   "vendor": "ultrajewelsmx",
   "name": "store",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
@@ -59,7 +59,8 @@
     "vtex.iframe": "0.x",
     "vtex.responsive-layout": "0.x",
     "vtex.tab-layout": "0.x",
-    "vtex.search": "1.x"
+    "vtex.search": "1.x",
+    "vtex.sandbox": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

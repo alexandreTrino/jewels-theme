@@ -134,8 +134,26 @@
   padding-right: 5px;
 }
 
+.flexColChild--col-iframe-sucursal{
+  width: fit-content!important;
+}
+
 .flexRow--row-brands{
   padding: 20px 0;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: #eaeaea;
+}
+
+.flexRowContent--row-sucursal{
+  justify-content: flex-start;
+}
+
+.flexRow--row-sucursal{
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.flexColChild--col-submenu-marcas{
+  height: fit-content!important;
 }

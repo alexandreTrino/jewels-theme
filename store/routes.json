@@ -47,7 +47,7 @@
   "store.custom#catalogo": {
     "path": "/catalogo"
   },
-  "store.custom#location-page":{
+  "store.custom#iframe-page":{
     "path":"/relojeria/rolex/"
   }
 }

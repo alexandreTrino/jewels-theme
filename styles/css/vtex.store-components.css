@@ -138,7 +138,7 @@
 
 .searchBarInnerContainer :global(.vtex-styleguide-9-x-input),
 .searchBarInnerContainer  :global(.vtex-input__suffix){
-  background: #f5f5f5;
+  background: #eaeaea;
 }
 
 .searchBarInnerContainer  :global(.vtex-input__suffix){

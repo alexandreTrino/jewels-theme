@@ -1,0 +1,47 @@
+{
+    "rich-text#sucursal-s06": {
+        "props": {
+            "text": "## Sucursal 06 \n\n **Teléfono:** 99-9999-9999 \n **Dirección:** Poniente 134 #786, Colonia Industrial Vallejo, Delegación Azcapotzalco, 02300, Ciudad de México \n\n",
+            "blockClass": "about"
+        }
+    },
+    "flex-layout.row#s06":{
+        "children":[
+            "flex-layout.col#iframe-s06",
+            "flex-layout.col#image-s06"
+        ],
+        "props":{
+            "blockClass":"row-sucursal",
+            "horizontalAlign":"left",
+            "colGap": "5",
+            "colSizing": "auto"
+        }
+    },
+    "flex-layout.col#iframe-s06":{
+        "children":["iframe#s06"],
+        "props":{
+            "blockClass":"col-iframe-sucursal"
+        }
+    },
+    "iframe#s06": {
+        "props": {
+            "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60177.325546885!2d-99.16576951715395!3d19.495071158296543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f85b1397a055:0x3d240ccef6754993!2sMARAGA (SEGUETAS LENMEX SA DE CV)!5e0!3m2!1ses!2smx!4v1570113247962!5m2!1ses!2smx",
+            "width": 500,
+            "height": 350,
+            "blockClass":"surcusal-frame"
+        }
+    },
+    "flex-layout.col#image-s06":{
+        "children":["image#s06"],
+        "props":{
+            "blockClass":"col-iframe-sucursal"
+        }
+    },
+    "image#s06":{
+        "props":{
+            "src": "assets/foto-sucursal.png",
+            "srcset": "assets/foto-sucursal.png",
+            "title": "Tienda"
+        }
+    }
+}

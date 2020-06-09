@@ -108,12 +108,16 @@
       "height": 720,
       "images": [
         {
+          "image": "assets/slider-rolex.png",
+          "mobileImage": "assets/slider-rolex.png"
+        },
+        {
           "image": "https://ultrajewels.com/wp-content/uploads/2020/01/62017681_JLC_LATAM_POLARIS_ULTRA-JEWELS_2000x920-V2.jpg",
-          "mobileImage": "assets/banner-principal-mobile.png"
+          "mobileImage": "https://ultrajewels.com/wp-content/uploads/2020/01/62017681_JLC_LATAM_POLARIS_ULTRA-JEWELS_2000x920-V2.jpg"
         },
         {
           "image": "https://ultrajewels.com/wp-content/uploads/2020/01/banner-espan%C3%9Eol.png",
-          "mobileImage": "assets/banner-principal-mobile.png"
+          "mobileImage": "https://ultrajewels.com/wp-content/uploads/2020/01/banner-espan%C3%9Eol.png"
         }
       ]
     }

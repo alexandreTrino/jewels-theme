@@ -6,6 +6,7 @@
     "children": [
       "menu-item#relojes",
       "menu-item#joyeria",
+      "menu-item#rolex",
       "menu-item#marcas"
     ]
   },
@@ -185,7 +186,7 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#relojes"
+      "vtex.menu@2.x:submenu#joyeria"
     ]
   },
   "vtex.menu@2.x:submenu#joyeria": {
@@ -202,13 +203,11 @@
     },
     "children": [
       "menu-item#anillos",
-      "menu-item#carreras",
-      "menu-item#clasicos",
-      "menu-item#cronografos",
-      "menu-item#militar",
-      "menu-item#navegacion",
-      "menu-item#piloto",
-      "menu-item#suizo"
+      "menu-item#aretes",
+      "menu-item#brazeletes",
+      "menu-item#collares",
+      "menu-item#pendientes",
+      "menu-item#pulseras"
     ]
   },
 
@@ -224,6 +223,21 @@
         "noFollow": false,
         "tagTitle": "Anillos",
         "text": "Anillos"
+      }
+    }
+  },
+  "menu-item#aretes": {
+    "props": {
+      "id": "menu-item-aretes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria/aretes",
+        "noFollow": false,
+        "tagTitle": "Aretes",
+        "text": "Aretes"
       }
     }
   },
@@ -328,9 +342,353 @@
     "props": {
       "orientation": "vertical"
     },
+    "children": ["flex-layout.row#wrapper-submenu"]
+  },
+  "flex-layout.row#wrapper-submenu":{
+    "children":[
+      "flex-layout.col#col-submenu-marcas-01",
+      "flex-layout.col#col-submenu-marcas-02",
+      "flex-layout.col#col-submenu-marcas-02-a",
+      "flex-layout.col#col-submenu-marcas-03"
+    ],
+    "props":{
+      "blockClass":"col-submenu"
+    }
+  },
+  "flex-layout.col#col-submenu-marcas-01":{
+    "children":[
+      "menu-item#title-alta-relojeria",
+      "vtex.menu@2.x:menu#marcas-submenu-01"
+    ],
+    "props":{
+      "blockClass":["col-submenu-marcas","col-submenu-marcas-01"]
+    }
+  },
+  "vtex.menu@2.x:menu#marcas-submenu-01": {
+    "props": {
+      "orientation": "vertical"
+    },
     "children": [
-      "menu-item#calvin-klein"
+      "menu-item#blancpain",
+      "menu-item#breguet",
+      "menu-item#girard-perregaux",
+      "menu-item#hublot",
+      "menu-item#iwc",
+      "menu-item#jaeger-lecoultre",
+      "menu-item#panerai",
+      "menu-item#patek-philippe",
+      "menu-item#vacheron-constantin",
+      "menu-item#zenith"
     ]
+  },
+
+  "menu-item#title-alta-relojeria": {
+    "props": {
+      "id": "menu-item-title-alta-relojeria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blancpain",
+        "noFollow": true,
+        "tagTitle": "ALTA RELOJERÍA",
+        "text": "ALTA RELOJERÍA"
+      },
+      "blockClass":"vtex-title-menu"
+    }
+  },
+  "menu-item#blancpain": {
+    "props": {
+      "id": "menu-item-blancpain",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blancpain",
+        "noFollow": true,
+        "tagTitle": "Blancpain",
+        "text": "Blancpain"
+      }
+    }
+  },
+  "menu-item#breguet": {
+    "props": {
+      "id": "menu-item-breguet",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blancpain",
+        "noFollow": true,
+        "tagTitle": "Breguet",
+        "text": "Breguet"
+      }
+    }
+  },
+  "menu-item#girard-perregaux": {
+    "props": {
+      "id": "menu-item-girard",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blancpain",
+        "noFollow": true,
+        "tagTitle": "Girard Perregaux",
+        "text": "Girard Perregaux"
+      }
+    }
+  },
+
+  "menu-item#hublot": {
+    "props": {
+      "id": "menu-item-hublot",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/hublot",
+        "noFollow": true,
+        "tagTitle": "Hublot",
+        "text": "Hublot"
+      }
+    }
+  },
+
+  "menu-item#iwc": {
+    "props": {
+      "id": "menu-item-iwc",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/iwc",
+        "noFollow": true,
+        "tagTitle": "IWC",
+        "text": "IWC"
+      }
+    }
+  },
+
+  "menu-item#jaeger-lecoultre": {
+    "props": {
+      "id": "menu-item-jaeger-lecoultre",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/jaeger-lecoultre",
+        "noFollow": true,
+        "tagTitle": "Jaeger Lecoultre",
+        "text": "Jaeger Lecoultre"
+      }
+    }
+  },
+
+  "menu-item#panerai": {
+    "props": {
+      "id": "menu-item-panerai",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/panerai",
+        "noFollow": true,
+        "tagTitle": "Panerai",
+        "text": "Panerai"
+      }
+    }
+  },
+
+  "menu-item#patek-philippe": {
+    "props": {
+      "id": "menu-item-patek-philippe",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/patek-philippe",
+        "noFollow": true,
+        "tagTitle": "Patek Philippe",
+        "text": "Patek Philippe"
+      }
+    }
+  },
+
+  "menu-item#vacheron-constantin": {
+    "props": {
+      "id": "menu-item-vacheron-constantin",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/vacheron-constantin",
+        "noFollow": true,
+        "tagTitle": "Vacheron Constantin",
+        "text": "Vacheron Constantin"
+      }
+    }
+  },
+
+  "menu-item#zenith": {
+    "props": {
+      "id": "menu-item-zenith",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/zenith",
+        "noFollow": true,
+        "tagTitle": "Zenith",
+        "text": "Zenith"
+      }
+    }
+  },
+
+  "flex-layout.col#col-submenu-marcas-02":{
+    "children":[
+      "menu-item#title-relojeria",
+      "vtex.menu@2.x:menu#marcas-submenu-02"
+    ],
+    "props":{
+      "blockClass":["col-submenu-marcas","col-submenu-marcas-02"]
+    }
+  },
+  "vtex.menu@2.x:menu#marcas-submenu-02": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#rolex",
+      "menu-item#baumer-mercier",
+      "menu-item#bell-ross",
+      "menu-item#bomberg",
+      "menu-item#breitling",
+      "menu-item#bvlgari",
+      "menu-item#calvin-klein",
+      "menu-item#cartier",
+      "menu-item#chanel",
+      "menu-item#chopard",
+      "menu-item#dior"
+    ]
+  },
+
+  "menu-item#title-relojeria": {
+    "props": {
+      "id": "menu-item-title-relojeria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blancpain",
+        "noFollow": true,
+        "tagTitle": "RELOJERÍA",
+        "text": "RELOJERÍA"
+      },
+      "blockClass":"vtex-title-menu"
+    }
+  },
+  "menu-item#rolex": {
+    "props": {
+      "id": "menu-item-rolex",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/rolex",
+        "noFollow": true,
+        "tagTitle": "Rolex",
+        "text": "Rolex"
+      }
+    }
+  },
+  "menu-item#baumer-mercier": {
+    "props": {
+      "id": "menu-item-baumer-mercier",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/baumer-mercier",
+        "noFollow": true,
+        "tagTitle": "Baumer Mercier",
+        "text": "Baumer Mercier"
+      }
+    }
+  },
+  "menu-item#bell-ross": {
+    "props": {
+      "id": "menu-item-bell-ross",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bell-ross",
+        "noFollow": true,
+        "tagTitle": "Bells & Ross",
+        "text": "Bells & Ross"
+      }
+    }
+  },
+  "menu-item#bomberg": {
+    "props": {
+      "id": "menu-item-bomberg",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bomberg",
+        "noFollow": true,
+        "tagTitle": "Bomberg",
+        "text": "Bomberg"
+      }
+    }
+  },
+  "menu-item#breitling": {
+    "props": {
+      "id": "menu-item-breitling",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/breitling",
+        "noFollow": true,
+        "tagTitle": "Breitling",
+        "text": "Breitling"
+      }
+    }
+  },
+  "menu-item#bvlgari": {
+    "props": {
+      "id": "menu-item-bvlgari",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bvlgari",
+        "noFollow": true,
+        "tagTitle": "Bvlgari",
+        "text": "Bvlgari"
+      }
+    }
   },
   "menu-item#calvin-klein": {
     "props": {
@@ -346,5 +704,455 @@
         "text": "Calvin Klein"
       }
     }
+  },
+  "menu-item#cartier": {
+    "props": {
+      "id": "menu-item-cartier",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cartier",
+        "noFollow": true,
+        "tagTitle": "Cartier",
+        "text": "Cartier"
+      }
+    }
+  },
+  "menu-item#chanel": {
+    "props": {
+      "id": "menu-item-chanel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/chanel",
+        "noFollow": true,
+        "tagTitle": "Chanel",
+        "text": "Chanel"
+      }
+    }
+  },
+  "menu-item#chopard": {
+    "props": {
+      "id": "menu-item-chopard",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/chopard",
+        "noFollow": true,
+        "tagTitle": "Chopard",
+        "text": "Chopard"
+      }
+    }
+  },
+  "menu-item#dior": {
+    "props": {
+      "id": "menu-item-dior",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/dior",
+        "noFollow": true,
+        "tagTitle": "Dior",
+        "text": "Dior"
+      }
+    }
+  },
+
+  "flex-layout.col#col-submenu-marcas-02-a":{
+    "children":[
+      "vtex.menu@2.x:menu#marcas-submenu-02-a"
+    ],
+    "props":{
+      "blockClass":["col-submenu-marcas","col-submenu-marcas-02-a"]
+    }
+  },
+
+  "vtex.menu@2.x:menu#marcas-submenu-02-a": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#frank-muller",
+      "menu-item#frederik-constant",
+      "menu-item#gucci",
+      "menu-item#longines",
+      "menu-item#montblanc",
+      "menu-item#omega",
+      "menu-item#piaget",
+      "menu-item#rado",
+      "menu-item#romain-jerome",
+      "menu-item#tag-heuer",
+      "menu-item#tissot",
+      "menu-item#victorinox"
+    ]
+  },
+  "menu-item#frank-muller": {
+    "props": {
+      "id": "menu-item-frank-muller",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/frank-muller",
+        "noFollow": true,
+        "tagTitle": "Frank Muller",
+        "text": "Frank Muller"
+      }
+    }
+  },
+  "menu-item#frederik-constant": {
+    "props": {
+      "id": "menu-item-frederik-constant",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/frederik-constant",
+        "noFollow": true,
+        "tagTitle": "Frederik Constant",
+        "text": "Frederik Constant"
+      }
+    }
+  },
+  "menu-item#gucci": {
+    "props": {
+      "id": "menu-item-gucci",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/gucci",
+        "noFollow": true,
+        "tagTitle": "Gucci",
+        "text": "Gucci"
+      }
+    }
+  },
+  "menu-item#longines": {
+    "props": {
+      "id": "menu-item-longines",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/longines",
+        "noFollow": true,
+        "tagTitle": "Longines",
+        "text": "Longines"
+      }
+    }
+  },
+  "menu-item#montblanc": {
+    "props": {
+      "id": "menu-item-montblanc",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/montblanc",
+        "noFollow": true,
+        "tagTitle": "Montblanc",
+        "text": "Montblanc"
+      }
+    }
+  },
+  "menu-item#omega": {
+    "props": {
+      "id": "menu-item-omega",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/omega",
+        "noFollow": true,
+        "tagTitle": "Omega",
+        "text": "Omega"
+      }
+    }
+  },
+  "menu-item#piaget": {
+    "props": {
+      "id": "menu-item-piaget",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/piaget",
+        "noFollow": true,
+        "tagTitle": "Piaget",
+        "text": "Piaget"
+      }
+    }
+  },
+  "menu-item#rado": {
+    "props": {
+      "id": "menu-item-rado",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/rado",
+        "noFollow": true,
+        "tagTitle": "Rado",
+        "text": "Rado"
+      }
+    }
+  },
+  "menu-item#romain-jerome": {
+    "props": {
+      "id": "menu-item-romain-jerome",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/romain-jerome",
+        "noFollow": true,
+        "tagTitle": "Romain Jerome",
+        "text": "Romain Jerome"
+      }
+    }
+  },
+  "menu-item#tag-heuer": {
+    "props": {
+      "id": "menu-item-tag-heuer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tag-heuer",
+        "noFollow": true,
+        "tagTitle": "Tag Heuer",
+        "text": "Tag Heuer"
+      }
+    }
+  },
+  "menu-item#tissot": {
+    "props": {
+      "id": "menu-item-tissot",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tissot",
+        "noFollow": true,
+        "tagTitle": "Tissot",
+        "text": "Tissot"
+      }
+    }
+  },
+  "menu-item#victorinox": {
+    "props": {
+      "id": "menu-item-victorinox",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/victorinox",
+        "noFollow": true,
+        "tagTitle": "Victorinox",
+        "text": "Victorinox"
+      }
+    }
+  },
+
+  "flex-layout.col#col-submenu-marcas-03":{
+    "children":[
+      "menu-item#title-joyeria",
+      "vtex.menu@2.x:menu#marcas-submenu-03"
+    ],
+    "props":{
+      "blockClass":["col-submenu-marcas","col-submenu-marcas-03"]
+    }
+  },
+
+  "vtex.menu@2.x:menu#marcas-submenu-03": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#joyeria-bvlgari",
+      "menu-item#joyeria-calvin-klein",
+      "menu-item#joyeria-djula",
+      "menu-item#joyeria-mattia-cielo",
+      "menu-item#joyeria-messika",
+      "menu-item#joyeria-mikimoto",
+      "menu-item#joyeria-piaget",
+      "menu-item#joyeria-pomellato",
+      "menu-item#joyeria-roberto-coin"
+    ]
+  },
+
+  "menu-item#title-joyeria": {
+    "props": {
+      "id": "menu-item-title-joyeria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/joyeria",
+        "noFollow": true,
+        "tagTitle": "JOYERÍA",
+        "text": "JOYERÍA"
+      },
+      "blockClass":"vtex-title-menu"
+    }
+  },
+
+  "menu-item#joyeria-bvlgari": {
+    "props": {
+      "id": "menu-item-joyeria-bvlgari",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bvlgari",
+        "noFollow": true,
+        "tagTitle": "Bvlgari",
+        "text": "Bvlgari"
+      }
+    }
+  },
+  "menu-item#joyeria-calvin-klein": {
+    "props": {
+      "id": "menu-item-joyeria-calvin-klein",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/calvin-klein",
+        "noFollow": true,
+        "tagTitle": "Calvin Klein",
+        "text": "Calvin Klein"
+      }
+    }
+  },
+  "menu-item#joyeria-djula": {
+    "props": {
+      "id": "menu-item-joyeria-djula",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/jdjula",
+        "noFollow": true,
+        "tagTitle": "Djula",
+        "text": "Djula"
+      }
+    }
+  },
+  "menu-item#joyeria-mattia-cielo": {
+    "props": {
+      "id": "menu-item-joyeria-matia-cielo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/matia-cielo",
+        "noFollow": true,
+        "tagTitle": "Matia Cielo",
+        "text": "Matia Cielo"
+      }
+    }
+  },
+  "menu-item#joyeria-messika": {
+    "props": {
+      "id": "menu-item-joyeria-messika",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/messika",
+        "noFollow": true,
+        "tagTitle": "Messika",
+        "text": "Messika"
+      }
+    }
+  },
+  "menu-item#joyeria-mikimoto": {
+    "props": {
+      "id": "menu-item-joyeria-mikimoto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mikimoto",
+        "noFollow": true,
+        "tagTitle": "Mikimoto",
+        "text": "Mikimoto"
+      }
+    }
+  },
+  "menu-item#joyeria-piaget": {
+    "props": {
+      "id": "menu-item-joyeria-piaget",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/piaget",
+        "noFollow": true,
+        "tagTitle": "Piaget",
+        "text": "Piaget"
+      }
+    }
+  },
+  "menu-item#joyeria-pomellato": {
+    "props": {
+      "id": "menu-item-joyeria-pomellato",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/pomellato",
+        "noFollow": true,
+        "tagTitle": "Pomellato",
+        "text": "Pomellato"
+      }
+    }
+  },
+  "menu-item#joyeria-roberto-coin": {
+    "props": {
+      "id": "menu-item-joyeria-roberto-coin",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/roberto-coin",
+        "noFollow": true,
+        "tagTitle": "Roberto Coin",
+        "text": "Roberto Coin"
+      }
+    }
   }
+
 }

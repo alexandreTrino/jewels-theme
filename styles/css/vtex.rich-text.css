@@ -9,7 +9,7 @@
   justify-content: flex-start;
   text-align: left;
   padding-bottom: 0.3rem;
-  border-bottom:1px solid #ddd;
+  border-bottom:1px solid #eaeaea;
   position: relative;
   margin-bottom: 20px;
 }
@@ -22,7 +22,7 @@
   bottom:0;
   height: 2px;
   width: 7%;
-  background-color: #000;
+  background-color: #b4975c;
 }
 
 .headingLevel2--shelfTitle {
@@ -47,7 +47,7 @@
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034E;
+  color: #444;
 }
 
 .container--question .strong {
