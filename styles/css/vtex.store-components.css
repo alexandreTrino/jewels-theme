@@ -207,3 +207,16 @@
 .productImagesGallerySwiperContainer--quickview{
   margin-top: 12px;
 }
+
+.label--news-footer{
+  display: block;
+  text-align: left;
+}
+
+.sizeDesktop{
+  min-width: initial;
+}
+
+.openIconContainer{
+  padding: 0px;
+}

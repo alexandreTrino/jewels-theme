@@ -2,14 +2,12 @@
   "store.home": {
     "blocks": [
       "flex-layout.row#main-banner",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#mini-banners",
       "flex-layout.row#brands",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#shelf-title",
       "flex-layout.row#shelf",
-      "flex-layout.row#line-banners",
+      //"flex-layout.row#line-banners",
       "flex-layout.row#shelf-title-2",
       "flex-layout.row#shelf-2"
     ]
@@ -18,7 +16,7 @@
   "flex-layout.row#main-banner":{
     "children":["list-context.image-list#demo"],
     "props":{
-      "blockClass":"main-banner-row"
+      "blockClass":"full-main-banner-row"
     }
   },
 
@@ -28,73 +26,37 @@
       "flex-layout.col#mini-banner-2"
     ],
     "props":{
-      "blockClass":"main-banner-row",
-      "colGap":5
+      "blockClass":"main-banner-row"
     }
   },
 
   "flex-layout.col#mini-banner-1":{
     "children":[
-      "list-context.image-list#mini-banner-1"
+      "image#minibanner-01"
     ],
     "props":{
-      "width":"53%"
+      "width":"50%"
     }
   },
 
-  "list-context.image-list#mini-banner-1": {
-    "children": ["slider-layout#mini-banner-1"],
-    "props": {
-      "height": 368,
-      "images": [
-        {
-          "image": "https://www.lunns.com/download/images/cartier_brandpage_top_banner.jpg",
-          "mobileImage": "https://www.lunns.com/download/images/cartier_brandpage_top_banner.jpg"
-        }
-      ]
-    }
-  },
-  "slider-layout#mini-banner-1": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "blockClass": "carousel"
+  "image#minibanner-01":{
+    "props":{
+      "src": "https://www.lunns.com/download/images/cartier_brandpage_top_banner.jpg"
     }
   },
 
   "flex-layout.col#mini-banner-2":{
     "children":[
-      "list-context.image-list#mini-banner-2"
-    ]
-  },
-
-  "list-context.image-list#mini-banner-2": {
-    "children": ["slider-layout#mini-banner-2"],
-    "props": {
-      "height": 368,
-      "images": [
-        {
-          "image": "https://ultrajewels.com/wp-content/uploads/2020/05/Cover-Web-Banner-1.jpg",
-          "mobileImage": "https://ultrajewels.com/wp-content/uploads/2020/05/Cover-Web-Banner-1.jpg"
-        }
-      ]
+      "image#minibanner-02"
+    ],
+    "props":{
+      "width":"50%"
     }
   },
-  "slider-layout#mini-banner-2": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "never",
-      "blockClass": "carousel"
+
+  "image#minibanner-02":{
+    "props":{
+      "src": "https://www.lunns.com/download/images/cartier_brandpage_top_banner.jpg"
     }
   },
 
@@ -108,16 +70,12 @@
       "height": 720,
       "images": [
         {
-          "image": "assets/slider-rolex.png",
-          "mobileImage": "assets/slider-rolex.png"
+          "image": "assets/slider-home/banner-home-01.png",
+          "mobileImage": "assets/slider-home/banner-home-01.png"
         },
         {
-          "image": "https://ultrajewels.com/wp-content/uploads/2020/01/62017681_JLC_LATAM_POLARIS_ULTRA-JEWELS_2000x920-V2.jpg",
-          "mobileImage": "https://ultrajewels.com/wp-content/uploads/2020/01/62017681_JLC_LATAM_POLARIS_ULTRA-JEWELS_2000x920-V2.jpg"
-        },
-        {
-          "image": "https://ultrajewels.com/wp-content/uploads/2020/01/banner-espan%C3%9Eol.png",
-          "mobileImage": "https://ultrajewels.com/wp-content/uploads/2020/01/banner-espan%C3%9Eol.png"
+          "image": "assets/slider-home/banner-home-01.png",
+          "mobileImage": "assets/slider-home/banner-home-01.png"
         }
       ]
     }
