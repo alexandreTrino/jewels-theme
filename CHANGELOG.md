@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.3] - 2021-05-11
+
 ## [3.37.0] - 2020-05-18
 ### Changed
 - PreventRouteChange to `false`.
